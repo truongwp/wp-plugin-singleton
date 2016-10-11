@@ -113,3 +113,5 @@ final class WP_Plugin_Singleton {
 function wp_plugin_singleton() {
 	return WP_Plugin_Singleton::get_instance();
 }
+
+$GLOBALS['wp_plugin_singleton'] = wp_plugin_singleton();
